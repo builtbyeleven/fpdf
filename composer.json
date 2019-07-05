@@ -1,0 +1,36 @@
+{
+    "name": "builtbyeleven/fpdf",
+    "description": "A FPDF package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kennith Leung",
+            "email": "kennith.leung@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "BuiltByEleven\\FPdf\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BuiltByEleven\\FPdf\\Test\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BuiltByEleven\\FPdf\\FPdfServiceProvider"
+            ],
+            "aliases": {
+                "FPdf": "BuiltByEleven\\FPdf\\Facades\\FPdf"
+            }
+        }
+    }
+}
